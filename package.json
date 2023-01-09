@@ -19,9 +19,11 @@
   },
   "lint-staged": {
     "*.{jsx,less,md,json}": [
+      "umi lint --fix",
       "prettier --write"
     ],
     "*.ts?(x)": [
+      "umi lint --fix",
       "prettier --parser=typescript --write"
     ]
   },
