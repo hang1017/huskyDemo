@@ -1,0 +1,42 @@
+{
+  "name": "umi1",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "umi build",
+    "lint": "umi lint --fix",
+    "prepare": "husky install",
+    "start": "umi dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, css, json, md}": [
+      "umi lint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "umi": "^4.0.13"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@umijs/fabric": "^3.0.0",
+    "@umijs/lint": "^4.0.42",
+    "eslint": "^8.31.0",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "husky": ">=7",
+    "lint-staged": ">=10",
+    "stylelint": "^14.16.1",
+    "typescript": "^4"
+  }
+}
