@@ -18,10 +18,11 @@
     }
   },
   "lint-staged": {
-    "*.{js, css, json, md}": [
-      "umi lint --fix",
-      "prettier --write",
-      "git add"
+    "*.{jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
     ]
   },
   "dependencies": {
