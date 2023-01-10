@@ -12,16 +12,9 @@
     "start": "umi dev"
   },
   "lint-staged": {
-    "*.{jsx,less,md,json}": [
-      "umi lint --fix",
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "umi lint --fix",
-      "prettier --parser=typescript --write"
-    ],
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
+    "**/*.{ts,tsx,json,jsx,less}": [
+      "git log"
+    ]
   },
   "dependencies": {
     "umi": "^4.0.13"
