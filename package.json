@@ -37,6 +37,6 @@
   },
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommit.js",
-    "pre-commit": "lint-staged"
+    "pre-commit": "yarn start"
   }
 }

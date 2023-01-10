@@ -3,7 +3,6 @@ const App = () => {
   let b = 2;
   let c = 3;
   let d = 4;
-  let e = 5;
 
   return <div>this is hang</div>;
 };
