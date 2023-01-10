@@ -15,7 +15,9 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,jsx,less}": [
-      "git log"
+      "git add",
+      "",
+      "prettier --write"
     ]
   },
   "dependencies": {
@@ -37,7 +39,6 @@
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
-    "commit-msg": "node scripts/verifyCommit.js",
-    "pre-commit": "yarn run con:log"
+    "pre-commit": "lint-staged"
   }
 }
