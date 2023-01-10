@@ -8,15 +8,14 @@
   "main": "index.js",
   "scripts": {
     "build": "umi build",
-    "con:log": "node ./scripts/conlog.js",
-    "lint": "umi lint --fix",
+    "lint": "umi lint",
     "lint-staged": "lint-staged",
+    "lint:fix": "umi lint --fix",
     "start": "umi dev"
   },
   "lint-staged": {
     "**/*.{ts,tsx,json,jsx,less}": [
       "git add",
-      "",
       "prettier --write"
     ]
   },
