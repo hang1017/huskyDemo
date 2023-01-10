@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "umi build",
+    "con:log": "node ./scripts/conlog.js",
     "lint": "umi lint --fix",
     "lint-staged": "lint-staged",
     "start": "umi dev"
@@ -37,6 +38,6 @@
   },
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommit.js",
-    "pre-commit": "yarn start"
+    "pre-commit": "yarn run con:log"
   }
 }
