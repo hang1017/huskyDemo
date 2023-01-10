@@ -9,7 +9,6 @@
   "scripts": {
     "build": "umi build",
     "lint": "umi lint --fix",
-    "prepare": "husky install",
     "start": "umi dev"
   },
   "lint-staged": {
@@ -20,7 +19,9 @@
     "*.ts?(x)": [
       "umi lint --fix",
       "prettier --parser=typescript --write"
-    ]
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.css": "stylelint --fix"
   },
   "dependencies": {
     "umi": "^4.0.13"
@@ -34,12 +35,12 @@
     "eslint": "^8.31.0",
     "eslint-plugin-unicorn": "^45.0.2",
     "fs": "^0.0.1-security",
-    "lint-staged": "^9.2.5",
+    "lint-staged": ">=10",
     "stylelint": "^14.16.1",
     "typescript": "^4"
   },
   "gitHooks": {
-    "commit-msg": "alita verify-commit",
+    "commit-msg": "node scripts/verifyCommit.js",
     "pre-commit": "lint-staged"
   }
 }
