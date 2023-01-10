@@ -30,8 +30,10 @@
     "@types/react-dom": "^18",
     "@umijs/fabric": "^3.0.0",
     "@umijs/lint": "^4.0.42",
+    "chalk": "^5.2.0",
     "eslint": "^8.31.0",
     "eslint-plugin-unicorn": "^45.0.2",
+    "fs": "^0.0.1-security",
     "lint-staged": "^9.2.5",
     "stylelint": "^14.16.1",
     "typescript": "^4"
