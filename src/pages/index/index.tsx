@@ -1,12 +1,13 @@
 import React from "react";
 
 const App = () => {
-  let a = 1;
-  let b = 2;
-  let c = 3;
-  let d = 4;
-  let e = 5;
-  let f = 6;
+  const a = 1;
+  const b = 2;
+  const c = 3;
+  const d = 4;
+  const e = 5;
+  const f = 6;
+  const g = 7;
 
   return <div>this is hang</div>;
 };

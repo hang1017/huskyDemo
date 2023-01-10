@@ -10,13 +10,14 @@
     "build": "umi build",
     "lint": "umi lint",
     "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .ts,.tsx",
     "lint:fix": "umi lint --fix",
     "start": "umi dev"
   },
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.css": "stylelint --syntax css",
-    "**/*.{ts,tsx}": "npm run lint:fix",
+    "**/*.{ts,tsx}": "npm run lint-staged:js",
     "**/*.{ts,tsx,json,jsx,less}": [
       "git add",
       "prettier --write"
