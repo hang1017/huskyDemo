@@ -37,7 +37,8 @@
     "fs": "^0.0.1-security",
     "lint-staged": ">=10",
     "stylelint": "^14.16.1",
-    "typescript": "^4"
+    "typescript": "^4",
+    "yorkie": "^2.0.0"
   },
   "gitHooks": {
     "commit-msg": "node scripts/verifyCommit.js",
