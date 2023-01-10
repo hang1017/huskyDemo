@@ -31,7 +31,7 @@
     "@types/react-dom": "^18",
     "@umijs/fabric": "^3.0.0",
     "@umijs/lint": "^4.0.42",
-    "chalk": "^5.2.0",
+    "chalk": "^3.0.0",
     "eslint": "^8.31.0",
     "eslint-plugin-unicorn": "^45.0.2",
     "fs": "^0.0.1-security",
@@ -42,6 +42,7 @@
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
+    "commit-msg": "node scripts/verifyCommit.js",
     "pre-commit": "lint-staged"
   }
 }
